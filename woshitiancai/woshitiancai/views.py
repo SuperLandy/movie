@@ -6,7 +6,6 @@ urllib3.disable_warnings()
 def home(request):
     return render(request, 'index.html')
 def re_search(request):
-
     import requests
     movie = request.GET.get('text')
     try:

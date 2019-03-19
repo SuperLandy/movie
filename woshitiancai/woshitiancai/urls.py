@@ -21,7 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 #  使用pattern来加载模板
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.home),
+    path('admin/', admin.site.urls),
     path('re_search/', views.re_search),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
