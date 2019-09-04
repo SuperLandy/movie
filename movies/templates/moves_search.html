@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <link REL="shortcut icon" href="/static/images/favicon.ico"/>
+    <meta charset="utf-8">
+    <title>Yoshiko</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.default.css" id="theme-stylesheet">
+</head>
+<script src="/static/jquery-3.4.1.js"></script>
+<script src="/static/moves.js"></script>
+<body>
+    <div style="background-image: url('/static/images/bg1.jpg')" class="main">
+      <div class="overlay"></div>
+      <div class="container"><br>
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="cursive">Sun jia jia Movie</h1>
+            <h2 class="sub">We are Yo shi ko!</h2>
+          </div>
+        </div>
+        <div class="mailing-list">
+          <h3 class="mailing-list-heading">Please enter your video address and click on parse to watch the movie for free</h3><br>
+                <div class="form-group"><span style="color: #843534">解析通道：</span>
+                <select id="passageway">
+                    <option value="1" selected="selected">①号通用vip引擎系统【小佳佳选这个】</option>
+                    <option value="2" >②号通用vip引擎系统【其他人选这个】</option>
+                    <option value="3" >③号通用vip引擎系统【稳定通用】</option>
+                    <option value="4" >④号通用vip引擎系统【一般般】</option>
+                </select><br>
+              </div>
+          <div class="row">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="text" placeholder="http://www.woshitiancai.com/yoshiko" id="movie_url" class="form-control transparent">
+              </div><button class="btn btn-danger" id="btn_search">Go</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

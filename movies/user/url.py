@@ -1,7 +1,7 @@
-"""woshitiancai URL Configuration
+"""movies URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/dev/topics/http/urls/
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -13,16 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from . import views
-from django.conf import settings
-from django.conf.urls.static import static
-#  使用pattern来加载模板
+from user import views
+
 urlpatterns = [
-    path('', views.home),
-    path('admin/', admin.site.urls),
-    path('api/', views.api),
-    path('re_search/', views.re_search),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('login/', views.accounts_login),
+]
